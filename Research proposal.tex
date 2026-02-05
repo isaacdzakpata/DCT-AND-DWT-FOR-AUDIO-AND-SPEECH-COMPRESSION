@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+
+\title{AUDIO AND SPEECH COMPRESSION USING DCT AND DWT TECHNIQUES}
+\author{Isaac Dzakpata}
+\date{February 2026}
+
+\begin{document}
+
+\maketitle
+
+\section{Project Topic}
+
+Speech compression is a key technology underlying digital cellular communications in today’s world. From VoIPs (Voice over Internet Protocol), voicemail to voice response systems; a certain level of speech compression is needed to reduce the amount of data required to represent speech while maintaining acceptable perceptual quality for users \cite{subramanian2014wavelet}. Compression is nothing but high input stream of data converted into smaller size. The main objective of speech compression is to process human speech signals into an efficient encoded form that can be decoded back to produce a close approximation of the signals  \cite{patil2013audio}.
+
+There are numerous techniques for speech compression but this research will focus on Transform techniques for speech compression. Transform techniques do not compress the signal, they provide information about the signal  \cite{patil2013audio}. Using various encoding techniques like Run-length encoding and Huffman encoding, we then compress the signals with the information deduced. This research will focus on two major transform techniques which are Discrete Cosine Transform (DCT) and the Discrete Wavelet Transform (DWT). Using DCT, reconstruction of signal can be done very accurately; this property of DCT is used for data compression. Localization feature of wavelet along with time frequency resolution property makes DWT very suitable for speech compression \cite{patil2013audio}. Both techniques are fundamental in speech compression and DCT is heavily related to Fast-Fourier Transforms (FFT) which incorporates Fourier series and frequency domain analysis as its major principle for FFT based algorithms.
+
+\section{Key Research Questions}
+
+This research will aim to solve or explore these possible questions:
+
+\begin{enumerate}
+    \item How do DCT and DWT represent audio and speech signals in the transform domain?
+    \item How can transform domain coefficients be manipulated to achieve compression while preserving efficient signal quality?
+    \item How do DCT based and DWT based compression methods compare in terms of compression ratio and reconstruction quality?
+    \item What are the computational and practical limitations of using DCT and DWT for audio and speech compression?
+\end{enumerate}
+
+\section{Planned Methodology}
+
+\begin{enumerate}
+    \item \textbf{Selection of Data} – Sample short audio data will be used in its appropriate format.
+    \item \textbf{Application of transform technique} – DCT and DWT will be applied to audio samples to obtain the signals in the frequency domain.
+    \item \textbf{Compression stages} – This will involve thresholding of the coefficients, quantization (process of reducing the precision of a digital signal, typically from a higher-precision format to a lower-precision format) and encoding.
+    \item \textbf{Signal Reconstruction} – The compressed data is now de-quantified and inversely transformed to get signals very similar to the original audio compressed.
+    \item \textbf{Performance Metrics and Analysis} – Metrics like Compression factor, SNR (Signal to Noise Ratio), PSNR (Peak Signal to Noise Ratio) will be used to compare between how DCT and DWT perform in terms of efficiency and quality preservation. Both technique trade offs will be discussed as well.
+\end{enumerate}
+
+\section{Repository Link}
+
+\url{https://github.com/isaacdzakpata/DCT-AND-DWT-FOR-AUDIO-AND-SPEECH-COMPRESSION}
+
+\bibliographystyle{ieeetr}
+\bibliography{proposalref}
+\end{document}
