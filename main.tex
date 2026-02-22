@@ -1,0 +1,29 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage[numbers]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\title{AUDIO AND SPEECH COMPRESSION USING DCT AND DWT TECHNIQUES}
+\author{Isaac Dzakpata}
+\date{Febraury 2026}
+
+\begin{document}
+
+\maketitle
+
+\section{INTRODUCTION}
+
+Speech is a basic way for humans to convey information and communicate effectively. The change in the telecommunication infrastructure, in recent years, from circuit switched to packet switched systems has also reflected on the way that speech and audio signals are carried in present systems \cite{patil2013audio}. Audio compression has since become an important concept in the new multimedia age with a goal of coding audio and speech signals at the lowest possible data rates. The main objective of speech compression is to process human speech signals into an efficient encoded form that can be decoded back to produce a close approximation of the signals \cite{patil2013audio}. Storage and transmission of uncompressed speech data will be extremely costly and impractical, so we try to reduce the size of the audio signals whiles still maintaining an acceptable quality. Balance is key for audio compression. To compare the efficiency of audio compression methods, this study investigates specialized transform techniques known as Discrete Cosine Transform (DCT) and the Discrete Wavelet Transform (DWT).
+Discrete Cosine Transform (DCT) is often described as a specialized or "low-level" version of the Discrete Fourier Transform (DFT/FFT). It is frequently used for data compression because it concentrates the energy of a signal (like an image) into a small number of coefficients more effectively.
+
+\section{THEORY}
+
+There are various techniques for speech compression like waveform coding and parametric coding. This paper focuses on the transform coding techniques which mainly works by converting the signals into the frequency domain and isolating the dominant features only taking out any extra noise which comes off as less dominant peaks or features. In transform method we have used discrete wavelet transform technique and discrete cosine transform technique. When we use wavelet transform technique, the original signal can be represented in terms of wavelet expansion \cite{patil2013audio}. Similarly in case of DCT transform, speech can be represented in terms of DCT coefficients. Wavelet transform is the latest method of compression because of its ability to describe any type of signals both in time and frequency domain \cite{subramanian2014wavelet}. Transform techniques do not compress the signal, they provide information about the signal and using various encoding techniques like Run-length encoding and Huffman encoding, we then compress the signals with the information deduced. In both methods, the transform coefficients provide an alternative representation of the signal. Many of these coefficients have very small values and contribute little to the overall signal. By removing these small coefficients, significant compression can be achieved while maintaining acceptable signal quality.
+
+\bibliographystyle{plainnat}
+\bibliography{finalresearch}
+
+\end{document}
